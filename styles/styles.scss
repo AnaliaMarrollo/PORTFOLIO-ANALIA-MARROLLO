@@ -49,9 +49,10 @@ main {
         color: $color-blanco;
         text-shadow: $sombra-items;
         text-align: center;
-         &:hover {
-             color: darken($color-blanco, 5%);
-         }
+
+        &:hover {
+            color: darken($color-blanco, 5%);
+        }
 
         &-link {
             text-decoration: none;
@@ -178,7 +179,7 @@ nav>a {
             justify-content: center;
 
             &--icono {
-                font-size: 2rem;
+                font-size: 1rem;
                 padding-top: .25rem;
                 margin: .25rem 0;
                 color: $color-blanco;
@@ -543,10 +544,10 @@ nav>a {
             color: $color-negro;
             border-radius: .25rem;
             padding: .5rem;
-            font-size: 3rem;
+            font-size: 1.6rem;
         }
 
-        &:hover{
+        &:hover {
             text-shadow: $sombra-items;
         }
     }
@@ -558,15 +559,16 @@ nav>a {
     }
 }
 
-    iframe {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-        border: none;
-        &:hover {
-            box-shadow: $sombra-items;
-        }
+iframe {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: none;
+
+    &:hover {
+        box-shadow: $sombra-items;
     }
+}
 
 // FIN ESTILOS FOOTER -------------------------------------------//
 /****************************************************************/

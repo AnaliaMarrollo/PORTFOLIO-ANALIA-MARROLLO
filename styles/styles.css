@@ -342,7 +342,7 @@ nav > a {
 }
 
 .seccion__inicio--redes--icono {
-  font-size: 2rem;
+  font-size: 1rem;
   padding-top: .25rem;
   margin: .25rem 0;
   color: white;
@@ -754,7 +754,7 @@ nav > a {
   color: #222222;
   border-radius: .25rem;
   padding: .5rem;
-  font-size: 3rem;
+  font-size: 1.6rem;
 }
 
 .footer__link:hover {
@@ -972,7 +972,7 @@ iframe:hover {
             align-items: center;
   }
   .seccion__inicio--redes--icono {
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin: 0 .5rem;
   }
   .resaltado {
