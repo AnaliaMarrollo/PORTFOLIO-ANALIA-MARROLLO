@@ -304,6 +304,15 @@ nav > a {
   width: 15%;
 }
 
+.seccion__inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .seccion__inicio--contenedor-foto-redes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,6 +329,7 @@ nav > a {
 .seccion__inicio--foto {
   height: 15rem;
   width: 15rem;
+  margin-top: 1rem;
   background-image: url("../imagenes/foto-sobre-mi.jpeg");
   background-position: center;
   background-size: cover;
@@ -849,7 +859,7 @@ iframe:hover {
             align-items: center;
   }
   .seccion {
-    min-height: 40vh;
+    min-height: 75vh;
     padding: .5rem;
   }
   .seccion__titulo {
