@@ -192,7 +192,7 @@ main {
 }
 
 .nav__logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 900;
   font-family: "Archivo Black", sans-serif;
   color: white;
@@ -206,7 +206,6 @@ main {
 
 .nav__logo-link {
   text-decoration: none;
-  width: 7rem;
 }
 
 .nav__logo-contenedor {
