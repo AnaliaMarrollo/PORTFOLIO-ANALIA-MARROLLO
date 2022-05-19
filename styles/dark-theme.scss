@@ -1,0 +1,117 @@
+@import "variables";
+
+
+.nav {
+    &__contenedor {
+        background-color: $color-negro;
+    }
+}
+
+.nav__contenedor-menu {
+    background-color: $color-negro;
+}
+
+.nav {
+    &__menu {
+        &-item {
+            color: $color-blanco;
+        }
+    }
+}
+
+.fa-bars,
+.fa-times {
+    color: $color-blanco;
+
+    &:hover {
+        color: darken($color-blanco,5%);
+    }
+}
+
+.seccion {
+    box-shadow: $sombra-items;
+    background-color: $color-negro;
+
+    &__titulo {
+        color: $color-blanco;
+    }
+    &__sobre-mi{
+        &--texto{
+           color: $color-blanco;
+        }
+    }
+    &__proyectos{
+        &--texto{
+            &-nombre-proyecto, &-tecnologias-proyecto{
+          color: $color-blanco;
+        }}
+        
+    }
+}
+
+.resaltado{
+       &--mindaro {
+           color: $color-negro;
+       }
+}
+
+.contacto {
+    &__input {
+        color: $color-blanco;
+        background-color: $color-negro;
+        border: solid .01rem darken($color-blanco, 5%);
+
+        &::placeholder {
+            color: darken($color-blanco, 5%);
+        }
+
+        &:focus {
+            border: solid .2rem darken($color-blanco, 5%);
+            box-shadow: $sombra-items-blanca;
+        }
+
+        &--consulta {
+            &::placeholder {
+                color: darken($color-blanco, 5%);
+            }
+        }
+    }   
+}
+
+.error-contacto {
+    color: $color-negro;
+    background-color: $color-blanco;
+}
+
+.error-contacto-input {
+    border: $color-blanco solid .25rem;
+
+    &:focus {
+        border: $color-blanco solid .25rem;
+    }
+}
+
+.footer {
+    background-color: $color-negro;
+
+    &__link {
+        color: $color-blanco;
+
+        &-redes {
+            color: $color-blanco;
+        }
+        &:hover{
+            text-shadow: $sombra-items-blanca;
+        }
+    }
+
+    &__copyright {
+        color: $color-blanco;
+    }
+}
+
+iframe{
+     &:hover {
+         box-shadow: $sombra-items-blanca;
+     }
+}

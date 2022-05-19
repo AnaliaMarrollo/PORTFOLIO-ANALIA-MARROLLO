@@ -1,0 +1,33 @@
+//COLORES
+
+$color-negro: #222222;
+$color-blanco: white;
+$color-baby-blue:#70D6FF;
+$color-french-pink:#FF70A6;
+$color-salmon: #FF9770;
+$color-mindaro: #E9FF70;
+
+//SOMBRAS
+$sombra-menu: 0rem .2rem .25rem rgb(54, 54, 54);
+$sombra-items: 0 .1rem .25rem rgb(54, 54, 54);
+$sombra-footer: -.5rem 0 1rem rgb(54, 54, 54);
+$sombra-items-blanca:0 .1rem .25rem rgb(223, 221, 221);
+
+//FUENTES
+
+$fuente-principal: 'Mulish',
+sans-serif;
+$fuente-negrita: 'Archivo Black',
+sans-serif;
+
+//PROPIEDADES COMUNES
+
+%botones-celestes {
+    color: $color-blanco;
+    background-color: $color-baby-blue;
+    text-shadow: $sombra-items;
+
+    &:hover {
+        color: darken($color-blanco, 5%);
+    }
+}

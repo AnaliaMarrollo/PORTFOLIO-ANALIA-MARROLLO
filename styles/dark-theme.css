@@ -1,0 +1,126 @@
+.nav__contenedor {
+  background-color: #222222;
+}
+
+.nav__contenedor-menu {
+  background-color: #222222;
+}
+
+.nav__menu-item {
+  color: white;
+}
+
+.fa-bars,
+.fa-times {
+  color: white;
+}
+
+.fa-bars:hover,
+.fa-times:hover {
+  color: #f2f2f2;
+}
+
+.seccion {
+  -webkit-box-shadow: 0 0.1rem 0.25rem #363636;
+          box-shadow: 0 0.1rem 0.25rem #363636;
+  background-color: #222222;
+}
+
+.seccion__titulo {
+  color: white;
+}
+
+.seccion__sobre-mi--texto {
+  color: white;
+}
+
+.seccion__proyectos--texto-nombre-proyecto, .seccion__proyectos--texto-tecnologias-proyecto {
+  color: white;
+}
+
+.resaltado--mindaro {
+  color: #222222;
+}
+
+.contacto__input {
+  color: white;
+  background-color: #222222;
+  border: solid 0.01rem #f2f2f2;
+}
+
+.contacto__input::-webkit-input-placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input:-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input::-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input::placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input:focus {
+  border: solid 0.2rem #f2f2f2;
+  -webkit-box-shadow: 0 0.1rem 0.25rem #dfdddd;
+          box-shadow: 0 0.1rem 0.25rem #dfdddd;
+}
+
+.contacto__input--consulta::-webkit-input-placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input--consulta:-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input--consulta::-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.contacto__input--consulta::placeholder {
+  color: #f2f2f2;
+}
+
+.error-contacto {
+  color: #222222;
+  background-color: white;
+}
+
+.error-contacto-input {
+  border: white solid 0.25rem;
+}
+
+.error-contacto-input:focus {
+  border: white solid 0.25rem;
+}
+
+.footer {
+  background-color: #222222;
+}
+
+.footer__link {
+  color: white;
+}
+
+.footer__link-redes {
+  color: white;
+}
+
+.footer__link:hover {
+  text-shadow: 0 0.1rem 0.25rem #dfdddd;
+}
+
+.footer__copyright {
+  color: white;
+}
+
+iframe:hover {
+  -webkit-box-shadow: 0 0.1rem 0.25rem #dfdddd;
+          box-shadow: 0 0.1rem 0.25rem #dfdddd;
+}
+/*# sourceMappingURL=dark-theme.css.map */

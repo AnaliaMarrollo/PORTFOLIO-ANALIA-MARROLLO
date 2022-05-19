@@ -1,0 +1,320 @@
+@import "variables.scss";
+
+/***************************** hasta 360px ************************************/
+
+@media only screen and (max-width: 360px) {
+
+    // --- SECCION CONTACTO ---// 
+    .contenedor {
+        &-contacto {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .boton {
+        width: 95%;
+        margin: auto;
+        margin-top: .5rem;
+        margin-left: .5rem;
+
+    }
+
+    .contacto {
+        &__input {
+            &--pref {
+                width: 95%;
+            }
+        }
+    }
+}
+
+/***************************** +360px ************************************/
+
+
+@media only screen and (min-width: 360px) {
+
+    // ---RESPONSIVE HEADER--- //
+    .nav {
+        &__contenedor {
+            display: grid;
+            grid-template-columns: 2fr .5fr .5fr;
+
+            &-menu {
+                justify-content: flex-start;
+            }
+        }
+
+        &__menu-item {
+            width: 70%;
+            margin: auto;
+            padding: .25rem 0;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    nav>a {
+        margin-top: .5rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .contenedor__nav-dark {
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
+    .seccion {
+        min-height: 40vh;
+        padding: .5rem;
+
+        &__titulo {
+            width: 65%;
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+
+            &--lg {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__inicio {
+            &--titulo {
+                font-size: 1.6rem;
+                margin-top: .25rem;
+                margin-bottom: .25rem;
+            }
+        }
+    }
+
+    .btn {
+        &--redondo {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+    }
+
+    // --- SECCION CONTACTO ---// 
+    .contenedor {
+        &-contacto {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .boton {
+        width: 95%;
+        margin: auto;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+
+    .contacto {
+        &__input {
+            &--pref {
+                width: 95%;
+            }
+        }
+    }
+}
+
+/***************************** 480px ************************************/
+
+
+@media only screen and (min-width: 480px) {
+
+    // --- SECCION CONTACTO --- //
+    .contenedor {
+        &-contacto {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .boton {
+        width: 95%;
+        margin: auto;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+
+    .contacto {
+        &__input {
+            &--pref {
+                width: 95%;
+            }
+        }
+    }
+}
+
+/***************************** 600px ************************************/
+
+@media only screen and (min-width: 600px) {
+
+    // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
+    .seccion {
+        &__titulo {
+            font-size: 2.5rem;
+        }
+
+        &__inicio {
+            &--titulo {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    // --- SECCION PROYECTO --- //
+    .seccion {
+        &__proyectos {
+            &--texto {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/***************************** 768px ************************************/
+
+@media only screen and (min-width: 768px) {
+
+    // ---RESPONSIVE HEADER--- //
+    .nav {
+        &__contenedor {
+            display: grid;
+            grid-template-columns: 2fr .25fr .25fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        &__menu-item {
+            width: 40%;
+            margin: auto;
+        }
+    }
+
+    .contenedor__nav-dark {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: .5rem 0 0 .5rem;
+    }
+
+    // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
+    .seccion {
+        &__titulo {
+            width: 70%;
+            margin: auto;
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+        }
+
+        &__inicio {
+            &--titulo {
+                font-size: 3rem;
+                border-radius: 2rem;
+            }
+
+            &--redes {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &--icono {
+                    font-size: 3rem;
+                    margin: 0 .5rem;
+                }
+            }
+        }
+    }
+
+    .resaltado {
+        padding: 0 1rem;
+    }
+
+    .btn {
+        &--redondo {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+        }
+    }
+
+    // --- SECCION PROYECTO --- //
+    .seccion {
+        &__proyectos {
+            &--contenedor-proyecto {
+                display: flex;
+                flex-direction: row;
+            }
+
+            &--texto {
+                width: 80%;
+                height: 30rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+
+                &-titulo-proyecto {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .proyecto {
+        &--img {
+            margin: 1rem;
+            width: 75%;
+            height: 30rem;
+        }
+    }
+
+    // --- SECCION CONTACTO --- //
+    .contenedor {
+        &-contacto {
+            width: 65%;
+            margin: auto;
+        }
+    }
+}
+
+/***************************** 1024px ************************************/
+
+@media only screen and (min-width: 1024px) {
+
+    // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
+    .seccion {
+        &__titulo {
+            width: 60%;
+            margin: auto;
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+        }
+
+        &__inicio {
+            &--titulo {
+                font-size: 3.5rem;
+                border-radius: 2.5rem;
+            }
+        }
+    }
+
+    // --- SECCION CONTACTO --- //
+    .contenedor {
+        &-contacto {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}

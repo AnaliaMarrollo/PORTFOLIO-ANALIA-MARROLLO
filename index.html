@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------Etiquetas meta SEO-------- -->
+    <meta name="description" content="Analía Marrollo. Desarrolladora Front-End." />
+    <meta name="keywords"
+        content="web developer, front-end developer, desarollo web, sitios web, desarrolladora web, programadora, desarrolladora front-end, javascript, html5, css3, sass, jquery, bootstrap" />
+    <meta name="ROBOTS" content="index, follow" />
+    <meta name="ROBOTS" content="all" />
+    <meta name="Language" content="Spanish" />
+    <meta name="resource-type" content="Document" />
+    <meta name="doc-type" content="web page" />
+    <meta name="GOOGLEBOT" content="index, follow, all" />
+    <meta name="distribution" content="Global" />
+    <meta name="city" content="Buenos Aires" />
+    <meta name="country" content="Argentina" />
+    <meta name="author" content="Analia Marrollo" />
+    <meta name="title" content="Soy Analía Marrollo, desarrolladora front-end. Ingresá para conocer mis proyectos :)" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Icono solapa navegador -->
+    <link rel="shorcut icon" href="./images/muyvosnav-favicon.jpg" />
+    <!-- Estilos -->
+    <link rel="stylesheet" id="estilos" href="./styles/styles.css" />
+    <link rel="stylesheet" id="dark" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- CDN JQUERY -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- CDN SWEET ALERT -->
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
+    <script defer src="./js/nav.js"></script>
+    <script defer src="./js/contacto.js"></script>
+    <!-- Titulo solapa navegador -->
+    <title>Anita Marrollo Front-End</title>
+</head>
+
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACIÓN -->
+
+        <nav class="nav__contenedor">
+            <!-- LOGO -->
+
+            <a href="index.html" class="nav__logo-link">
+                <div class="nav__logo-contenedor">
+                    <h5 class="nav__logo" title="logo">AM</h5>
+                    <h5 class="nav__logo" title="logo"><i class="fa fa-code"></i></h5>
+                </div>
+            </a>
+
+            <!-- CONTENEDOR CARRITO Y MODO DARK -->
+
+            <div class="contenedor__nav-dark">
+                <button class="switch-modo-nocturno light"></button>
+            </div>
+
+            <!-- MENU HAMBURGUESA -->
+
+            <div class="nav__menu-hamburguesa"></div>
+            <div class="nav__contenedor-menu-hamburguesa">
+                <i id="icono-menu-hamburguesa" class="fas fa-bars"></i>
+            </div>
+            <div class="nav__contenedor-menu">
+                <a href="index.html" class="nav__menu-link">
+                    <div class="nav__menu-item nav__menu-item-1">INICIO</div>
+                </a>
+                <a href="index.html#sobre-mi" class="nav__menu-link">
+                    <div class="nav__menu-item nav__menu-item-2">SOBRE MI</div>
+                </a>
+                <a href="index.html#proyectos" class="nav__menu-link">
+                    <div class="nav__menu-item nav__menu-item-3">PROYECTOS</div>
+                </a>
+                <a href="index.html#contacto" class="nav__menu-link">
+                    <div class="nav__menu-item nav__menu-item-4">CONTACTO</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCION INICIO -->
+
+        <section class="seccion seccion__inicio" id="inicio">
+            <h1 class="seccion__titulo  seccion__titulo--lg seccion__inicio--titulo">¡HOLA! <span
+                    class="seccion__titulo seccion__inicio--titulo resaltado resaltado--rosa">Soy
+                    ANALIA</span> </h1>
+            <h2 class="seccion__titulo seccion__inicio--titulo"><span
+                    class="seccion__titulo seccion__titulo--lg seccion__inicio--titulo resaltado resaltado--salmon">Desarrolladora
+                </span>Front-end</h2>
+            <div class="seccion__inicio--contenedor-foto-redes">
+                <div class="seccion__inicio--foto"></div>
+                <div class="seccion__inicio--redes">
+                    <button class="btn btn--redondo btn--celeste"><a href="./index.html#contacto"
+                            class="seccion__inicio--redes--icono"><i class="fa fa-envelope"></i></a></button>
+                    <button class="btn btn--redondo btn--celeste"><a href="mailto:anam85_1@hotmail.com"
+                            class="seccion__inicio--redes--icono"><i class="fa fa-at"></i></a></button>
+                    <button class="btn btn--redondo btn--celeste"><a
+                            href="https://www.linkedin.com/in/analia-marrollo-0271241b/" target="_blank"
+                            class="seccion__inicio--redes--icono "><i class="fab fa-linkedin"></i></a></button>
+                    <button class="btn btn--redondo btn--celeste"><a href="https://github.com/AnaliaMarrollo"
+                            target="_blank" class="seccion__inicio--redes--icono"><i
+                                class="fab fa-github"></i></a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION SOBRE MI -->
+
+        <section class="seccion seccion__sobre-mi" id="sobre-mi">
+            <h2 class="seccion__titulo resaltado resaltado--salmon">SOBRE MI</h2>
+            <div class="contenedor__seccion-sobre-mi">
+                <div class="contenedor__seccion-sobre-mi--foto--texto">
+
+                    <p class="seccion__sobre-mi--texto">
+                        Me dicen Anita, vivo en Buenos Aires, Argentina. Soy Contadora
+                        Pública recibida en la UBA y trabajo en una empresa de Seguros.
+                    </p>
+                    <p class="seccion__sobre-mi--texto">
+                        Me encanta el diseño y durante de muchos años tuve curiosidad
+                        por el desarrollo web y la programación.
+                    </p>
+                    <p class="seccion__sobre-mi--texto">
+                        A fines de 2021 finalicé la carrera de Desarrolladora Front-End
+                        con orientación en React.js en Coderhouse y actualmente me
+                        encuentro realizando un curso en Codo a Codo de Full Stack
+                        Python.
+                    </p>
+                    <p class="seccion__sobre-mi--texto">
+                        Mi próximo desafío es estudiar Diseño UX/UI.
+                    </p>
+
+                </div>
+                <h2 class="seccion__titulo seccion__titulo--lg resaltado resaltado--rosa">
+                    CONOCIMIENTOS
+                </h2>
+                <div class="contenedor__seccion-sobre-mi--skills">
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--html
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--css
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--sass
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--javascript
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--github
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--bootstrap
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--react
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--python
+              "></div>
+                    <div class="
+                contenedor__seccion-sobre-mi--skills-img
+                contenedor__seccion-sobre-mi--skills--vue
+              "></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION PROYECTOS -->
+
+        <section class="seccion seccion__proyectos" id="proyectos">
+            <h2 class="seccion__titulo resaltado resaltado--mindaro">proyectos</h2>
+            <div class="seccion__proyectos--contenedor-proyecto">
+                <div class="proyecto--img proyecto--img--dw" title="imagen proyecto desarrollo web"></div>
+                <div class="seccion__proyectos--texto">
+                    <p class="seccion__proyectos--texto-titulo-proyecto">DESARROLLO WEB</p>
+                    <p class="seccion__proyectos--texto-nombre-proyecto">PROFE TRONK</p>
+                    <p class="seccion__proyectos--texto-tecnologias-proyecto">
+                        Desarrollo de sitio web con 5 páginas basado en HTML5, CSS3,
+                        Bootstrap.
+                    </p>
+                    <button class="btn btn--celeste"><a href="https://profe-tronk.netlify.app/"
+                            class="seccion__proyectos--links">Ir al sitio</a></button>
+                    <button class="btn btn--sm btn--celeste"><a href="https://github.com/AnaliaMarrollo/Profe-Tronk"
+                            class="seccion__proyectos--links"><i class="fab fa-github"></i></a></button>
+                </div>
+            </div>
+            <div class="seccion__proyectos--contenedor-proyecto">
+                <div class="proyecto--img proyecto--img--js" title="imagen proyecto javascript"></div>
+                <div class="seccion__proyectos--texto">
+                    <p class="seccion__proyectos--texto-titulo-proyecto">JAVASCRIPT</p>
+                    <p class="seccion__proyectos--texto-nombre-proyecto">MUY VOS SKIN</p>
+                    <p class="seccion__proyectos--texto-tecnologias-proyecto">Desarrollado con HTML5, CSS3, JavaScript y
+                        JQuery.</p>
+                    <button class="btn btn--celeste"><a href="https://muyvoskin.netlify.app/"
+                            class="seccion__proyectos--links">Ir al sitio</a></button>
+                    <button class="btn btn--sm btn--celeste"><a
+                            href="https://github.com/AnaliaMarrollo/MuyVosSkin-JS.AMARROLLO"
+                            class="seccion__proyectos--links"><i class="fab fa-github"></i></a></button>
+                </div>
+            </div>
+            <div class="seccion__proyectos--contenedor-proyecto">
+                <div class="proyecto--img proyecto--img--react" title="imagen proyecto react"></div>
+                <div class="seccion__proyectos--texto">
+                    <p class="seccion__proyectos--texto-titulo-proyecto">REACT JS</p>
+                    <p class="seccion__proyectos--texto-nombre-proyecto">BAKERY</p>
+                    <p class="seccion__proyectos--texto-tecnologias-proyecto">
+                        E-commerce desarrollado con React JS, JavaScript, HTML5, CSS3.
+                    </p>
+                    <button class="btn btn--celeste"><a href="https://ecommerce-bakery.netlify.app/"
+                            class="seccion__proyectos--links">Ir al sitio</a></button>
+                    <button class="btn btn--sm btn--celeste"><a
+                            href="https://github.com/AnaliaMarrollo/tiendaRJ.AMARROLLO"
+                            class="seccion__proyectos--links"><i class="fab fa-github"></i></a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+
+        <section class="seccion seccion__contacto" id="contacto">
+            <h2 class="seccion__titulo resaltado resaltado--salmon">Contacto</h2>
+            <div class="contenedor-contacto">
+                <form id="formulario-contacto" action="" method="POST" enctype="application/x-www-form-urlencoded"
+                    name="contacto-web">
+                    <!-- NOMBRE -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="text" name="nombre" id="nombre" autocomplete="off"
+                            placeholder=" NOMBRE" />
+                        <i class="fas fa-check validacion-contacto" id="validacion-nombre"></i>
+                        <p class="error-contacto" id="error-nombre"></p>
+                    </div>
+                    <!-- APELLIDO -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="text" name="apellido" id="apellido" autocomplete="off"
+                            placeholder=" APELLIDO" /><br />
+                        <i class="fas fa-check validacion-contacto" id="validacion-apellido"></i>
+                        <p class="error-contacto" id="error-apellido"></p>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="email" name="email" id="email" autocomplete="off"
+                            placeholder=" @" /><br />
+                        <i class="fas fa-check validacion-contacto" id="validacion-email"></i>
+                        <p class="error-contacto" id="error-email"></p>
+                    </div>
+                    <!-- TELEFONO -->
+                    <div class="contenedor-input">
+                        <input class="contacto__input" type="tel" name="telefono" id="telefono" autocomplete="off"
+                            maxlength="14" placeholder="ej: 11 6523-6523" /><br />
+                        <i class="fas fa-check validacion-contacto" id="validacion-telefono"></i>
+                        <p class="error-contacto" id="error-telefono"></p>
+                    </div>
+                    <!-- CONSULTA -->
+                    <div class="contenedor-input">
+                        <textarea class="contacto__input contacto__input--consulta" name="consulta" id="consulta"
+                            placeholder=" Escribe tu consulta"></textarea><br />
+                        <i class="
+                  fas
+                  fa-check
+                  validacion-contacto validacion-contacto--select
+                " id="validacion-consulta"></i>
+                        <p class="error-contacto" id="error-consulta"></p>
+                    </div>
+                    <!-- ERROR FORMULARIO INCOMPLETO -->
+                    <p class="error-contacto" id="error-complete-formulario"></p>
+                    <!-- SUBMIT -->
+                    <input class="boton boton__link boton__link--mt" type="submit" value="Enviar consulta" />
+                    <!-- RESET -->
+                    <input class="boton boton__link boton__link--mt" type="reset"
+                        value="Limpiar formulario" /><br /><br />
+                </form>
+            </div>
+        </section>
+
+        <!-- LOGO FIJO DE WHATSAPP -->
+
+        <div id="div-whatsapp">
+            <a class="boton__whatsapp" id="whatsapp" target="_blank"
+                href="https://api.whatsapp.com/send?phone=5491163655278&text=¡Hola!%20Tengo%20una%20consulta%20sobre..."><i
+                    class="fab fa-whatsapp m-1 boton__whatsapp--logo" title="Whatsapp link"></i></a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <a href="https://api.whatsapp.com/send?phone=5491163655278&text=¡Hola!%20Tengo%20una%20consulta%20sobre..."
+                target="_blank" class="footer__link footer__link-redes" title="Whatsapp link"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="mailto:anam85_1@hotmail.com" target="_blank" class="footer__link footer__link-redes"
+                title="Email link"><i class="fa fa-at"></i></a>
+            <a href="https://www.linkedin.com/in/analia-marrollo-0271241b/" target="_blank"
+                class="footer__link footer__link-redes" title="LinkedIn link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/AnaliaMarrollo" target="_blank" class="footer__link footer__link-redes"
+                title="Github link"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="footer__contenedor">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26898866.826008484!2d-76.36299731760195!3d-34.61546111524512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1652741848769!5m2!1ses!2sar"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- NO COPYRIGHT -->
+        <div class="footer__contenedor footer__copyright">
+            <p class="footer__copyright--p">
+                2022 | ANITA MARROLLO | Ningún Derecho Reservado | Diseñado por
+                <a href="https://github.com/AnaliaMarrollo" target="_blank" class="footer__link">Analía Marrollo</a>
+                con ♡
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
