@@ -170,12 +170,12 @@ const inputOK = (varErrorForm, varIconoForm) => {
 const mostrarMensajeExito = (errorCompleteFormulario) => {
   Swal.fire({
     width: "50rem",
-    height: "50rem",
+    height: "60rem",
     icon: "success",
-    iconColor: "#e068a0",
-    text: `TU CONSULTA FUE ENVIADA CON ÉXITO. NOS COMUNICAREMOS A LA BREVEDAD`,
+    iconColor: "#E9FF70",
+    text: `¡GRACIAS POR CONTACTARTE CONMIGO! TE RESPONDERÉ TU CONSULTA A LA BREVEDAD`,
     showConfirmButton: false,
-    timer: 2000,
+    timer: 3000,
   });
   removerPropiedadesErrorFormulario();
 };
@@ -242,47 +242,58 @@ formConsulta.addEventListener("blur", () => {
 });
 
 //SUBMIT FORMULARIO
-formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (
-    controlFinalFormulario.nombre &&
-    controlFinalFormulario.apellido &&
-    controlFinalFormulario.telefono &&
-    controlFinalFormulario.email &&
-    controlFinalFormulario.consulta
-  ) {
 
-    //SACO EL ICONO DE VALIDACION DE TODOS LOS ELEMENTOS
-    [
-      iconoNombre,
-      iconoApellido,
-      iconoApellido,
-      iconoConsulta,
-      iconoEmail,
-      iconoTelefono,
-    ].forEach((icono) => {
-      icono.classList.remove("validacion-contacto-activa");
+formulario.addEventListener("submit", handleSubmit) 
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        "Accept": "application/json"
+      }
     });
 
-    formulario.reset();
+    if (
+      controlFinalFormulario.nombre &&
+      controlFinalFormulario.apellido &&
+      controlFinalFormulario.telefono &&
+      controlFinalFormulario.email &&
+      controlFinalFormulario.consulta
+    ) {
 
-    //ALERTA MENSAJE ENVIADO!
-    mostrarMensajeExito(errorCompleteFormulario);
+      //SACO EL ICONO DE VALIDACION DE TODOS LOS ELEMENTOS
+      [
+        iconoNombre,
+        iconoApellido,
+        iconoApellido,
+        iconoConsulta,
+        iconoEmail,
+        iconoTelefono,
+      ].forEach((icono) => {
+        icono.classList.remove("validacion-contacto-activa");
+      });
 
-    //ITERACION PARA QUE EL OBJETO CONTROL VUELVA A VALORES FALSOS
-    for (let reseteo in controlFinalFormulario) {
-      controlFinalFormulario[reseteo] = false;
+      formulario.reset();
+
+      //ALERTA MENSAJE ENVIADO!
+      mostrarMensajeExito(errorCompleteFormulario);
+
+      //ITERACION PARA QUE EL OBJETO CONTROL VUELVA A VALORES FALSOS
+      for (let reseteo in controlFinalFormulario) {
+        controlFinalFormulario[reseteo] = false;
+      }
+    } else {
+      mostrarMensajeError();
+      //MUESTRA ERRORES EN LOS QUE NO ESTEN INGRESADOS
+      validacionInputNombre();
+      validacionInputApellido();
+      validacionInputEmail();
+      validacionInputTelefono();
+      validacionInputConsulta();
     }
-  } else {
-    mostrarMensajeError();
-    //MUESTRA ERRORES EN LOS QUE NO ESTEN INGRESADOS
-    validacionInputNombre();
-    validacionInputApellido();
-    validacionInputEmail();
-    validacionInputTelefono();
-    validacionInputConsulta();
-  }
-});
+  };
 
 //RESET FORMULARIO
 formulario.addEventListener("reset", (e) => {
