@@ -395,6 +395,8 @@ nav > a {
           flex-direction: column;
   width: 85%;
   margin: auto;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 .contenedor__seccion-sobre-mi--skills {
@@ -901,6 +903,9 @@ iframe:hover {
 
 /***************************** 480px ************************************/
 @media only screen and (min-width: 480px) {
+  .seccion {
+    min-height: 50vh;
+  }
   .contenedor-contacto {
     width: 100%;
     margin: auto;
@@ -962,12 +967,14 @@ iframe:hover {
   .seccion__titulo {
     width: 70%;
     margin: auto;
-    margin-top: .25rem;
-    margin-bottom: .25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .seccion__inicio--titulo {
     font-size: 3rem;
     border-radius: 2rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
   }
   .seccion__inicio--redes {
     display: -webkit-box;
@@ -1001,6 +1008,9 @@ iframe:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .seccion__proyectos--texto {
     width: 80%;
@@ -1019,9 +1029,6 @@ iframe:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .seccion__proyectos--texto-titulo-proyecto {
-    width: 70%;
-  }
   .proyecto--img {
     margin: 1rem;
     width: 75%;
@@ -1035,11 +1042,14 @@ iframe:hover {
 
 /***************************** 1024px ************************************/
 @media only screen and (min-width: 1024px) {
+  .seccion {
+    min-height: 60vh;
+  }
   .seccion__titulo {
     width: 60%;
     margin: auto;
-    margin-top: .25rem;
-    margin-bottom: .25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .seccion__inicio--titulo {
     font-size: 3.5rem;
