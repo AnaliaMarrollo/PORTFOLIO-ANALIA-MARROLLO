@@ -298,6 +298,10 @@ nav > a {
   padding: .25rem;
   cursor: pointer;
   border-radius: 1rem;
+  -webkit-animation: fadeInRightBig;
+          animation: fadeInRightBig;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .btn--sm {
