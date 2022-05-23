@@ -1,6 +1,6 @@
 //CONTACTO
 
-//ACCEDO AL FORMULATIO Y AL MENSAJE DE ERROR
+//ACCEDO AL FORMULARIO Y AL MENSAJE DE ERROR
 const formulario = document.getElementById("formulario-contacto");
 const errorCompleteFormulario = document.getElementById(
   "error-complete-formulario"
@@ -44,7 +44,7 @@ const parametrosFormulario = {
   consulta: /^[a-zA-ZÀ-ÿ\s0-9_,;:.¿?¡!+()*#$-]{20,200}$/,
 };
 
-//OBJETO CONTROL FINAL FORMULARIO, TODOS LOS ELEMENTOS DEBEN SER VERDADEROS (EXCEPTO OPCION LLAMADA QUE PUEDE SER FALSO)
+//OBJETO CONTROL FINAL FORMULARIO, TODOS LOS ELEMENTOS DEBEN SER VERDADEROS
 const controlFinalFormulario = {
   nombre: false,
   apellido: false,
@@ -173,7 +173,7 @@ const mostrarMensajeExito = (errorCompleteFormulario) => {
     height: "60rem",
     icon: "success",
     iconColor: "#E9FF70",
-    text: `¡GRACIAS POR CONTACTARTE CONMIGO! TE RESPONDERÉ TU CONSULTA A LA BREVEDAD`,
+    text: `¡GRACIAS POR CONTACTARTE CONMIGO! RESPONDERÉ TU CONSULTA A LA BREVEDAD`,
     showConfirmButton: false,
     timer: 3000,
   });

@@ -815,7 +815,7 @@ iframe:hover {
 }
 
 /****************************************************************/
-/*-- ADAPTACION A DISPOSITIVOS -----------*/
+/*--- ADAPTACION A DISPOSITIVOS ---*/
 .btn--celeste, .boton {
   color: white;
   background-color: #70D6FF;
@@ -828,6 +828,69 @@ iframe:hover {
 
 /***************************** hasta 360px ************************************/
 @media only screen and (max-width: 360px) {
+  .nav__contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr .75fr .75fr;
+        grid-template-columns: 1.5fr .75fr .75fr;
+  }
+  .nav__contenedor-menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav__menu-item {
+    width: 70%;
+    margin: auto;
+    padding: .25rem 0;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+  }
+  nav > a {
+    margin-top: .5rem;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .contenedor__nav-dark {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .seccion {
+    min-height: 50vh;
+    padding: .5rem;
+  }
+  .seccion__titulo {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.65rem;
+  }
+  .seccion__titulo--lg {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .seccion__inicio--titulo {
+    font-size: 1.6rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  }
+  .btn--redondo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
   .contenedor-contacto {
     width: 100%;
     margin: auto;
@@ -843,7 +906,7 @@ iframe:hover {
   }
 }
 
-/***************************** +360px ************************************/
+/***************************** 360px ************************************/
 @media only screen and (min-width: 360px) {
   .nav__contenedor {
     display: -ms-grid;
@@ -1077,5 +1140,5 @@ iframe:hover {
   }
 }
 
-/*----- FIN ADAPTACION A DISPOSITIVOS -----*/
+/*--- FIN ADAPTACION A DISPOSITIVOS ---*/
 /*# sourceMappingURL=styles.css.map */

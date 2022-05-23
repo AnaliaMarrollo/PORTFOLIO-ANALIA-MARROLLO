@@ -4,6 +4,73 @@
 
 @media only screen and (max-width: 360px) {
 
+    // ---RESPONSIVE HEADER--- //
+    .nav {
+        &__contenedor {
+            display: grid;
+            grid-template-columns: 1.5fr .75fr .75fr;
+
+            &-menu {
+                justify-content: flex-start;
+            }
+        }
+
+        &__menu-item {
+            width: 70%;
+            margin: auto;
+            padding: .25rem 0;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    nav>a {
+        margin-top: .5rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .contenedor__nav-dark {
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
+    .seccion {
+        min-height: 50vh;
+        padding: .5rem;
+
+        &__titulo {
+            width: 90%;
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.65rem;
+
+            &--lg {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__inicio {
+            &--titulo {
+                font-size: 1.6rem;
+                margin-top: .25rem;
+                margin-bottom: .25rem;
+            }
+        }
+    }
+
+    .btn {
+        &--redondo {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+    }
+
     // --- SECCION CONTACTO ---// 
     .contenedor {
         &-contacto {
@@ -17,7 +84,6 @@
         margin: auto;
         margin-top: .5rem;
         margin-left: .5rem;
-
     }
 
     .contacto {
@@ -27,9 +93,10 @@
             }
         }
     }
+    
 }
 
-/***************************** +360px ************************************/
+/***************************** 360px ************************************/
 
 
 @media only screen and (min-width: 360px) {
@@ -131,18 +198,6 @@
 
 @media only screen and (min-width: 480px) {
 
-    // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
-    // .seccion {
-    //     min-height: 50vh;
-    // }
-
-    // -- SECCION PROYECTO -- //
-    // .seccion__proyectos--texto-titulo-proyecto{
-    //     width: 55%;
-    //     margin: auto;
-    //     margin-top: 1rem;
-    // }
-
     // --- SECCION CONTACTO --- //
     .contenedor {
         &-contacto {
@@ -180,21 +235,6 @@
         &__inicio {
             &--titulo {
                 font-size: 2.5rem;
-            }
-        }
-    }
-
-    // --- SECCION PROYECTO --- //
-    .seccion {
-        &__proyectos {
-            &--texto {
-                // width: 85%;
-                // margin: auto;
-                // &-titulo-proyecto{
-                //     width: 85%;
-                //     margin: auto;
-                //     margin-top: .5rem;
-                // }
             }
         }
     }
@@ -285,10 +325,6 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-start;
-
-                // &-titulo-proyecto {
-                //     width: 100%;
-                // }
             }
         }
     }
