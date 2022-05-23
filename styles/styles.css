@@ -334,7 +334,7 @@ nav > a {
   height: 15rem;
   width: 15rem;
   margin-top: 1rem;
-  background-image: url("../imagenes/foto-sobre-mi.jpeg");
+  background-image: url("../images/foto-sobre-mi.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -431,39 +431,39 @@ nav > a {
 }
 
 .contenedor__seccion-sobre-mi--skills--html {
-  background-image: url("../imagenes/html.png");
+  background-image: url("../images/html.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--css {
-  background-image: url("../imagenes/css.png");
+  background-image: url("../images/css.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--sass {
-  background-image: url("../imagenes/sass.png");
+  background-image: url("../images/sass.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--github {
-  background-image: url("../imagenes/github.png");
+  background-image: url("../images/github.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--bootstrap {
-  background-image: url("../imagenes/bootstrap.png");
+  background-image: url("../images/bootstrap.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--react {
-  background-image: url("../imagenes/react.png");
+  background-image: url("../images/react.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--python {
-  background-image: url("../imagenes/python.png");
+  background-image: url("../images/python.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--vue {
-  background-image: url("../imagenes/vuejs.png");
+  background-image: url("../images/vuejs.png");
 }
 
 .contenedor__seccion-sobre-mi--skills--javascript {
-  background-image: url("../imagenes/javascript.png");
+  background-image: url("../images/javascript.png");
 }
 
 /*************************************************************/
@@ -514,8 +514,27 @@ nav > a {
 }
 
 .seccion__proyectos--texto-tecnologias-proyecto {
-  width: 100%;
-  font-size: 1rem;
+  width: 85%;
+  margin: auto;
+  font-size: .85rem;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: .5rem;
+}
+
+.seccion__proyectos--botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: auto;
 }
 
 .proyecto--img {
@@ -528,15 +547,15 @@ nav > a {
 }
 
 .proyecto--img--dw {
-  background-image: url("../imagenes/proyecto-dw.png");
+  background-image: url("../images/proyecto-dw.png");
 }
 
 .proyecto--img--js {
-  background-image: url("../imagenes/proyecto-javascript.png");
+  background-image: url("../images/proyecto-javascript.png");
 }
 
 .proyecto--img--react {
-  background-image: url("../imagenes/proyecto-react.png");
+  background-image: url("../images/proyecto-react.png");
 }
 
 /*********************************************************************/
@@ -865,7 +884,7 @@ iframe:hover {
             align-items: center;
   }
   .seccion {
-    min-height: 75vh;
+    min-height: 50vh;
     padding: .5rem;
   }
   .seccion__titulo {
@@ -907,9 +926,6 @@ iframe:hover {
 
 /***************************** 480px ************************************/
 @media only screen and (min-width: 480px) {
-  .seccion {
-    min-height: 50vh;
-  }
   .contenedor-contacto {
     width: 100%;
     margin: auto;
@@ -932,10 +948,6 @@ iframe:hover {
   }
   .seccion__inicio--titulo {
     font-size: 2.5rem;
-  }
-  .seccion__proyectos--texto {
-    width: 50%;
-    margin: auto;
   }
 }
 

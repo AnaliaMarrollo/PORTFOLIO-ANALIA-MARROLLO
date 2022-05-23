@@ -68,7 +68,7 @@
 
     // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
     .seccion {
-        min-height: 75vh;
+        min-height: 50vh;
         padding: .5rem;
 
         &__titulo {
@@ -132,9 +132,9 @@
 @media only screen and (min-width: 480px) {
 
     // --- RESPONSIVE PROPIEDADES COMUNES Y SECCION INICIO --- //
-    .seccion {
-        min-height: 50vh;
-    }
+    // .seccion {
+    //     min-height: 50vh;
+    // }
 
     // -- SECCION PROYECTO -- //
     // .seccion__proyectos--texto-titulo-proyecto{
@@ -188,8 +188,8 @@
     .seccion {
         &__proyectos {
             &--texto {
-                width: 50%;
-                margin: auto;
+                // width: 85%;
+                // margin: auto;
                 // &-titulo-proyecto{
                 //     width: 85%;
                 //     margin: auto;
