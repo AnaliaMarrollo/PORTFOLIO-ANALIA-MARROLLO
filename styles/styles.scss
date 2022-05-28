@@ -211,7 +211,7 @@ nav>a {
 
         &--texto {
             text-align: justify;
-            font-weight: 500;
+            font-weight: 300;
             font-size: 1rem;
             margin: .5rem 0;
 
@@ -229,6 +229,11 @@ nav>a {
     margin: auto;
     margin-top: 1rem;
     margin-bottom: .5rem;
+
+    &--texto{
+        width: 70%;
+        margin: auto;
+    }
 
     &--skills {
         display: flex;
